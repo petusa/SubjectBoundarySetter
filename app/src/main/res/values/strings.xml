@@ -3,5 +3,6 @@
     <string name="title_activity_main">Subject Boundary Setter</string>
     <string name="title_activity_setter">Set subject boundaries</string>
     <string name="title_activity_playback">Playback</string>
+    <string name="title_activity_playback_recent">Show recent</string>
     <string name="title_activity_camera">See camera</string>
 </resources>

@@ -31,6 +31,10 @@
             android:label="@string/title_activity_setter" >
         </activity>
         <activity
+            android:name="com.github.petusa.subjectboundarysetter.PlaybackRecentActivity"
+            android:label="@string/title_activity_playback_recent" >
+        </activity>
+        <activity
             android:name="com.github.petusa.subjectboundarysetter.CameraActivity"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
