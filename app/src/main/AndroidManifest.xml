@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.petusa.subjectboundarysetter" >
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application android:label="@string/app_name" >
+        <receiver android:name="com.github.ma1co.pmcademo.app.ExitCompletedReceiver" >
+            <intent-filter>
+                <action android:name="com.android.server.DAConnectionManagerService.ExitCompleted" />
+                <category android:name="ANDROID.INTENT.CATEGORY.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.github.ma1co.pmcademo.app.BootCompletedReceiver" >
+            <intent-filter>
+                <action android:name="com.android.server.DAConnectionManagerService.BootCompleted" />
+                <category android:name="ANDROID.INTENT.CATEGORY.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.github.petusa.subjectboundarysetter.PlaybackActivity"
+            android:label="@string/title_activity_setter" >
+        </activity>
+        <activity
+            android:name="com.github.petusa.subjectboundarysetter.CameraActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        </activity>
+        <activity
+            android:name="com.github.petusa.subjectboundarysetter.SetterActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        </activity>
+        <activity android:name="com.github.ma1co.pmcademo.app.BaseActivity" />
+        <activity android:name="com.github.ma1co.pmcademo.app.MainActivity" />
+        <activity android:name="com.github.ma1co.pmcademo.app.CameraActivity" />
+    </application>
+
+</manifest>
